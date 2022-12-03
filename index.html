@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/letter-s.png" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/808beae32b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sahil Shendurkar | Web Developer</title>
+  </head>
+
+  <body>
+    <!-- header section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 id="logo-text"><span>S</span>ahil.</h1>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-ellipsis" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm <span id="name-higlight">Sahil</span> a
+            <h1 class="animated animated-text">
+              <!-- <span>a</span> -->
+              <div class="animated-info">
+                <span class="animated-item">Programmer</span>
+                <span class="animated-item">Frontend Developer</span>
+                <span class="animated-item">Problem Solver</span>
+                <span class="animated-item">UI/UX Desginer</span>
+              </div>
+            </h1>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p id="about-me">
+              Hey! My name is Sahil Shendurkar. I am currently a B.Tech(CS)
+              student from Pune, Maharashtra. I am good at web development and
+              have developed so many projects that would help people carry on
+              their day-to-day tasks. I am also a good problem solver. I have
+              solved X number of problems on the GFG Practice site.
+            </p>
+
+            <div class="tab-titles active-link">
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX Designing</span>
+                  <br />Design Web/App Interface
+                </li>
+                <li>
+                  <span>Web development</span>
+                  <br />HTML, CSS and JavaScript <br />ReactJS <br />PHP
+                </li>
+                <li>
+                  <span>Programmer</span>
+                  <br />Problem Solving
+                </li>
+                <li>
+                  <span>Database</span>
+                  <br />SQL <br />MySQL
+                </li>
+                <li>
+                  <span>Web development</span>
+                  <br />Website Designer/Developer
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-2024</span>
+                  <br />Pursuing B.Tech in Computer Engineering at Vishwakarma
+                  Institute of Technology, Pune
+                </li>
+                <li>
+                  <span>2018-2021</span>
+                  <br />Completed Diploma in Computer Engineering at Government
+                  Polytechnic, Amravati
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Need one</span> <br />---</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <!-- <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                dolore totam odit explicabo. Quis, natus, fugiat illo minus culpa
+                voluptatem possimus eveniet excepturi, alias harum labore sed
+                tempora nemo quisquam!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+              dolore totam odit explicabo. Quis, natus, fugiat illo minus culpa
+              voluptatem possimus eveniet excepturi, alias harum labore sed
+              tempora nemo quisquam!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+              dolore totam odit explicabo. Quis, natus, fugiat illo minus culpa
+              voluptatem possimus eveniet excepturi, alias harum labore sed
+              tempora nemo quisquam!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--  portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="images/weather-trends.png"
+              alt="work1"
+            />
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, totam!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/iPhone 14.png" alt="work-2" />
+            <div class="layer">
+              <h3>Music app</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, totam!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="work-3" />
+            <div class="layer">
+              <h3>Online shopping app</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, totam!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >sahilshendurkar130+work@gmail.com
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Sahil0402"
+                ><i class="fa fa-github"></i
+              ></a>
+            </div>
+            <a href="images//my-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // menuscript
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu()
+      {
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
+
+<!-- https://youtu.be/0YFrGy_mzjY?t=2532 -->
