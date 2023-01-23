@@ -98,6 +98,7 @@ nav ul li a:hover::after {
 }
 #about-me {
   text-align: justify;
+  font-size: 18px;
 }
 .row {
   display: flex;
@@ -112,7 +113,7 @@ nav ul li a:hover::after {
   border-radius: 5px;
 }
 .about-col-2 {
-  flex-basis: 60%;
+  flex-basis: 80%;
 }
 .subtitle {
   font-size: 60px;
@@ -149,7 +150,7 @@ nav ul li a:hover::after {
 }
 .tab-contents ul li span {
   color: var(--secondary);
-  font-size: 14px;
+  font-size: 20px;
 }
 .tab-contents {
   display: none;
@@ -157,7 +158,23 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
-
+.tab-contents{
+  position: relative;
+}
+.skills_icons{
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  font-size: 50px;
+}
+.skills_icons i{
+  padding: 5px;
+  transition: background 0.5s, transform 0.5s;
+}
+.skills_icons i:hover{
+  color: #766ff9;
+  transform: translateY(-5px);
+}
 /* animated text */
 .animated {
   position: relative;
@@ -228,7 +245,7 @@ nav ul li a:hover::after {
 }
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 40px;
   margin-top: 50px;
 }
@@ -239,6 +256,8 @@ nav ul li a:hover::after {
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
+  box-shadow: rgb(255, 255, 255, 0.5) 0px 2px 5px;
+
 }
 .services-list div i {
   font-size: 50px;
@@ -264,65 +283,51 @@ nav ul li a:hover::after {
 #portfolio {
   padding: 30px 0;
 }
-.work-list {
+
+/* projects list */
+.projects-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 40px;
   margin-top: 50px;
 }
-.work {
+.projects-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
   border-radius: 10px;
-  position: relative;
-  overflow: hidden;
+  transition: background 0.5s, transform 0.5s;
+  text-align: justify;
+  box-shadow: rgb(255, 255, 255, 0.5) 0px 2px 5px;
 }
-.work img {
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s;
-  width: 50%;
-  margin: auto;
-  background-position: center;
-  background-size: auto;
+.projects-list div p {
+  font-size: 15px;
 }
-.layer {
-  width: 100%;
-  height: 100%;
-  background: var(--primary);
-  border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  font-size: 14px;
-  font-size: 14px;
-  transition: height 0.5s;
+.projects-list div p:hover {
+  overflow: visible;
+  white-space: pre-wrap;
 }
-.layer h3 {
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.layer a {
+/* .projects-list div i {
+  font-size: 30px;
   margin-top: 20px;
-  color: var(--primary);
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 60px;
-  background: var(--text-color);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
-}
-/*
-.work:hover .layer {
-  height: 100%;
 } */
+.projects-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.projects-list div a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 15px;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+}
+.projects-list div:hover {
+  background-color: var(--primary);
+}
 .btn {
   display: block;
   margin: 50px auto;
@@ -399,6 +404,12 @@ nav .fa-solid {
   display: none;
 }
 
+@media only screen and (max-width: 1250px)
+{
+  .skills_icons{
+    display: none;
+  }
+}
 @media only screen and (max-width: 600px) {
   ::-webkit-scrollbar {
     display: none;
@@ -432,7 +443,7 @@ nav .fa-solid {
     cursor: pointer;
   }
   #about {
-    padding: 60px 0;
+    padding: 20px 0;
   }
   .subtitle {
     font-size: 40px;
@@ -464,7 +475,6 @@ nav .fa-solid {
     background-repeat: no-repeat;
     background-position-y: 90%;
     background-position-x: 50%;
-
   }
   .header-text {
     margin-top: 35%;
@@ -481,7 +491,6 @@ nav .fa-solid {
     background-repeat: no-repeat;
     background-position-y: 0%;
     background-position-x: 50%;
-
   }
   .header-text {
     margin-top: 35%;
@@ -495,14 +504,12 @@ nav .fa-solid {
   }
 }
 @media only screen and (max-width: 400px) {
-
   #header {
     background: url(images/undraw_img_2.svg);
     background-size: 70%;
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-position-x: 50%;
-
   }
   .header-text {
     margin-top: 25%;
@@ -514,10 +521,8 @@ nav .fa-solid {
   .animated-item {
     font-size: 40px;
   }
-
 }
 @media only screen and (max-width: 430px) {
-
   #header {
     background: url(images/undraw_img_2.svg);
     background-size: 70%;
@@ -535,10 +540,8 @@ nav .fa-solid {
   .animated-item {
     font-size: 40px;
   }
-
 }
 @media only screen and (max-width: 450px) {
-
   #header {
     background: url(images/undraw_img_2.svg);
     background-size: 70%;
@@ -556,5 +559,66 @@ nav .fa-solid {
   .animated-item {
     font-size: 45px;
   }
+}
+.card {
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  position: relative;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-in-out;
+}
 
+.card:hover {
+  /*box-shadow: 0 5px 22px 0 rgba(0,0,0,.25);*/
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 54px;
+}
+
+.image {
+  height: 200px;
+  opacity: 0.7;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.image:hover,
+.card:hover .image {
+  height: 200px;
+  opacity: 1;
+}
+
+.text {
+  background: #fff;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.text p {
+  margin-bottom: 0px;
+}
+
+.fab {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -50px;
+  right: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #0066a2;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.fab:hover {
+  background: #549d3c;
+  cursor: pointer;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
