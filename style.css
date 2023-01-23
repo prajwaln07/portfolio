@@ -297,7 +297,7 @@ nav ul li a:hover::after {
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
-  text-align: justify;
+  /* text-align: justify; */
   box-shadow: rgb(255, 255, 255, 0.5) 0px 2px 5px;
 }
 .projects-list div p {
