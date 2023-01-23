@@ -291,14 +291,12 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .projects-list div {
-  background: #262626;
+  background: #6b63ff;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
-  /* text-align: justify; */
-  box-shadow: rgb(255, 255, 255, 0.5) 0px 2px 5px;
 }
 .projects-list div p {
   font-size: 15px;
@@ -325,7 +323,23 @@ nav ul li a:hover::after {
   position: relative;
 }
 .projects-list div:hover {
-  background-color: var(--primary);
+  background-color: #262626;
+}
+.project-list-font
+{
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+}
+.innerdiv
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.link-icon{
+  font-size: 25px;
 }
 .btn {
   display: block;

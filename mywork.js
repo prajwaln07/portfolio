@@ -65,10 +65,12 @@ let projectList = {
 let projectListDiv = document.getElementById('projects-list');
 for (let project in projectList) {
   let innerdiv = document.createElement('div'); //second div without class
+  innerdiv.className = "innerdiv";
 
-  let projectTitle = document.createElement('h2');
+  let projectTitle = document.createElement('span');
   let projectTitleTextNode = document.createTextNode(projectList[project].projectTitle);
   projectTitle.setAttribute('title', projectList[project].projectTitle);
+  projectTitle.className = "project-list-font";
   projectTitle.appendChild(projectTitleTextNode);
 
   let projectShortDescription = document.createElement('p');
@@ -78,13 +80,16 @@ for (let project in projectList) {
 
   let learnMoreLinkAnchor = document.createElement('a');
   learnMoreLinkAnchor.setAttribute("href", projectList[project].link);
-  
-  let learnMoreLinkAnchorText = document.createTextNode("visit site");
+  let learnMoreLinkAnchorIcon = document.createElement('i');
+  learnMoreLinkAnchorIcon.classList = "fa-solid fa-up-right-from-square link-icon";
+  learnMoreLinkAnchor.appendChild(learnMoreLinkAnchorIcon);
 
-  learnMoreLinkAnchor.appendChild(learnMoreLinkAnchorText);
+  let learnMoreLinkAnchorText = document.createTextNode("visit site");
+  // learnMoreLinkAnchor.appendChild(learnMoreLinkAnchorText);
+
   // appending all the main elements
   innerdiv.appendChild(projectTitle);
-  innerdiv.appendChild(projectShortDescription);
+  // innerdiv.appendChild(projectShortDescription);
   innerdiv.appendChild(learnMoreLinkAnchor);
 
   projectListDiv.appendChild(innerdiv);
