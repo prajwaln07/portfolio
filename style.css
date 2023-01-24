@@ -36,7 +36,7 @@ body {
 }
 /* header section */
 .container {
-  padding: 10px 10%;
+  padding: 1% 10%;
 }
 nav {
   display: flex;
@@ -98,6 +98,7 @@ nav ul li a:hover::after {
 #about-me {
   text-align: justify;
   font-size: 18px;
+  line-height: 2;
 }
 .row {
   display: flex;
@@ -157,20 +158,20 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
-.tab-contents{
+.tab-contents {
   position: relative;
 }
-.skills_icons{
+.skills_icons {
   position: absolute;
   right: 30px;
   top: 60px;
   font-size: 50px;
 }
-.skills_icons i{
+.skills_icons i {
   padding: 5px;
   transition: background 0.5s, transform 0.5s;
 }
-.skills_icons i:hover{
+.skills_icons i:hover {
   color: #766ff9;
   transform: translateY(-5px);
 }
@@ -256,7 +257,6 @@ nav ul li a:hover::after {
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
   box-shadow: rgb(255, 255, 255, 0.5) 0px 2px 5px;
-
 }
 .services-list div i {
   font-size: 50px;
@@ -325,20 +325,18 @@ nav ul li a:hover::after {
 .projects-list div:hover {
   background-color: #262626;
 }
-.project-list-font
-{
+.project-list-font {
   font-size: 1.5em;
   display: block;
   text-align: center;
 }
-.innerdiv
-{
+.innerdiv {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.link-icon{
+.link-icon {
   font-size: 25px;
 }
 .btn {
@@ -417,9 +415,8 @@ nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 1250px)
-{
-  .skills_icons{
+@media only screen and (max-width: 1250px) {
+  .skills_icons {
     display: none;
   }
 }
@@ -481,7 +478,7 @@ nav .fa-solid {
   }
 }
 /* max width means 324 paryanta hein rahil */
-@media only screen and (max-width: 325px) {
+@media (min-width:315px) and (max-width: 325px) {
   #header {
     background: url(images/undraw_img_2.svg);
     background-size: 80%;
@@ -496,8 +493,17 @@ nav .fa-solid {
   .header-text h1 {
     font-size: 30px;
   }
+  .services-list div{
+    padding: 30px;
+  }
+  .services-list {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  }
+  .projects-list {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  }
 }
-@media only screen and (max-width: 372px) {
+@media (min-width:340px) and (max-width: 375px) {
   #header {
     background: url(images/undraw_img_2.svg);
     background-size: 60%;
@@ -512,11 +518,17 @@ nav .fa-solid {
   .header-text h1 {
     font-size: 30px;
   }
-  .animated-item {
-    font-size: 40px;
+  .services-list div{
+    padding: 30px;
+  }
+  .services-list {
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  }
+  .projects-list {
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   }
 }
-@media only screen and (max-width: 400px) {
+@media (min-width:380px) and (max-width: 400px) {
   #header {
     background: url(images/undraw_img_2.svg);
     background-size: 70%;
@@ -535,7 +547,7 @@ nav .fa-solid {
     font-size: 40px;
   }
 }
-@media only screen and (max-width: 430px) {
+@media (min-width:400px) and (max-width: 430px) {
   #header {
     background: url(images/undraw_img_2.svg);
     background-size: 70%;
@@ -553,13 +565,20 @@ nav .fa-solid {
   .animated-item {
     font-size: 40px;
   }
+  .services-list {
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
+  
+  .projects-list {
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
 }
-@media only screen and (max-width: 450px) {
+@media (min-width:430px) and (max-width: 450px) {
   #header {
     background: url(images/undraw_img_2.svg);
     background-size: 70%;
     background-repeat: no-repeat;
-    background-position-y: 100%;
+    background-position-y: 84%;
     background-position-x: 35%;
   }
   .header-text {
@@ -570,7 +589,8 @@ nav .fa-solid {
     font-size: 30px;
   }
   .animated-item {
-    font-size: 45px;
+    font-size: 30px;
+    max-width: 200px;
   }
 }
 .card {
