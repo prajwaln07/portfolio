@@ -25,34 +25,29 @@ function closemenu() {
 let projectList = {
 
   0: {
-    "projectTitle": "CoinBase UI clone",
+    "projectTitle": "CoinBase clone",
     "description": "Project Coinbase UI is a user interface designed specifically for the Coinbase cryptocurrency platform. It provides a streamlined and intuitive interface for buying, selling, and managing cryptocurrencies on the Coinbase platform.",
     "link":"learn more"
   },
   1: {
-    "projectTitle": "NFT Marketplace",
-    "description": "Developed NFT marketplace with multiple chains that support multiple ERC-20 Tokens, and a platform for digital currency exchange of custom ERC-20 tokens built on the Ethereum blockchain.",
-    "link":"learn more"
-  },  
-  2: {
-    "projectTitle": "Movie Recommendation System",
-    "description": "A Movie Recommendation System using Streamlit and Python is a web application that uses machine learning algorithms to recommend movies to users based on their preferences.",
-    "link": "learn more"
+    "projectTitle": "Weather-trends",
+    "description": "Weather-trends is a website that provides weather information for various cities using modern visual elements such as SVG's. It displays various parameters of the environment, including current weather conditions, UV index and visibility which can be useful when planning outdoor activities. ",
+    "link":"https://weather-trends-teller.netlify.app"
   },
-  3: {
+  2: {
     "projectTitle": "A Pod by NASA",
     "description": "A POD by NASA is web application that allows users to view high-definition images of celestial bodies such as planets, galaxies, neutron stars, asteroids, and black holes captured by NASA's cameras. It serves as an educational tool for users to learn and explore the vastness of space.",
     "link": "https://apodbynasa.netlify.app"    
   },
   4: {
-    "projectTitle": "p-in-p",
-    "description": "Picture-in-picture (PiP) shrinks a video into a small player so you can keep watching while using other apps on your mobile device. You can move the small player around your device's home screen and position it over other apps.",
-    "link":"https://p-in-p.netlify.app"
-  },
+    "projectTitle": "NFT Marketplace",
+    "description": "Developed NFT marketplace with multiple chains that support multiple ERC-20 Tokens, and a platform for digital currency exchange of custom ERC-20 tokens built on the Ethereum blockchain.",
+    "link":"learn more"
+  },  
   5: {
-    "projectTitle": "Weather-trends",
-    "description": "Weather-trends is a website that provides weather information for various cities using modern visual elements such as SVG's. It displays various parameters of the environment, including current weather conditions, UV index and visibility which can be useful when planning outdoor activities. ",
-    "link":"https://p-in-p.netlify.app"
+    "projectTitle": "Movie Recommendation System",
+    "description": "A Movie Recommendation System using Streamlit and Python is a web application that uses machine learning algorithms to recommend movies to users based on their preferences.",
+    "link": "learn more"
   },
   6: {
     "projectTitle": "Memories using MERN stack",
