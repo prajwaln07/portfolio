@@ -27,7 +27,7 @@ let projectList = {
   0: {
     "projectTitle": "CoinBase clone",
     "description": "Project Coinbase UI is a user interface designed specifically for the Coinbase cryptocurrency platform. It provides a streamlined and intuitive interface for buying, selling, and managing cryptocurrencies on the Coinbase platform.",
-    "link":"learn more"
+    "link":"https://github.com/Sahil0402/coinbase-blockchain-app-using-sanity.io"
   },
   1: {
     "projectTitle": "Weather-trends",
@@ -42,18 +42,18 @@ let projectList = {
   4: {
     "projectTitle": "NFT Marketplace",
     "description": "Developed NFT marketplace with multiple chains that support multiple ERC-20 Tokens, and a platform for digital currency exchange of custom ERC-20 tokens built on the Ethereum blockchain.",
-    "link":"learn more"
+    "link":"https://github.com/Sahil0402/CryptoPunk"
   },  
   5: {
     "projectTitle": "Movie Recommendation System",
     "description": "A Movie Recommendation System using Streamlit and Python is a web application that uses machine learning algorithms to recommend movies to users based on their preferences.",
-    "link": "learn more"
+    "link": "https://github.com/Sahil0402/movie-recommender-system"
   },
   6: {
-    "projectTitle": "Memories using MERN stack",
+    "projectTitle": "E-commerce app",
     "description": "A full stack web application where people from all around the world can add the most fascinating places they have visited. With email and Google Authentication, Pagination, Search, and Filtering capabilities, and at the end, it is mobile responsive",
-    "link":"learn more"
-  }
+    "link":"https://github.com/Sahil0402/ecommerce_app"
+  },
 }
 
 //to create the element and display the data inside
